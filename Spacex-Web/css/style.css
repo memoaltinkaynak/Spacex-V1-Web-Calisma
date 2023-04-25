@@ -1,0 +1,230 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #ee3577;
+    --red: #dc3545;
+    --orange: #f68e62;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #767575;
+    --gray-dark: #434242;
+    --primary: #6f42c1;
+    --secondary: #4f4f4f;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #c2c2c2;
+    --lightgray: #eeeeee;
+    --dark: #434242;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    /* Font Sizes */
+    --font-normal: 1em;
+    --font-small: 0.8125rem;
+    /* Sidebar */
+    --sidebar-width: 280px;
+    --content-max-width: 860px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    line-height: 1.15;
+}
+body {
+    color: var(--secondary);
+    overflow-x: hidden
+}
+a{
+    color: var(--pink);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--gray-dark);
+    font-weight: bold
+}
+
+.btn {
+    font-weight: bold;
+    padding: .375rem 1rem;
+    height: 2.75rem;
+    transition: all 0.4s ease-in-out
+}
+
+
+.btn:focus,
+.btn.focus {
+    box-shadow: none !important
+}
+
+.btn-primary {
+    color: #fff
+}
+
+.form-control {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    height: 2.75rem;
+    border-color: var(--light)
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: var(--sidebar-width);
+    background: black;
+    color: #fff;
+}
+.header .site-title {
+    color:var(--white);
+    font-size:1.2em;
+    display:block;
+}
+
+.header .btn-primary {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+.header .btn-primary:hover {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: transparent
+}
+
+.header .navbar {
+    padding: 5rem 3rem;
+}
+.header .nav-item {
+    font-weight: bold;
+}
+
+.logo{
+    width:78px;
+}
+.social-list a {
+    width: 32px;
+    height: 32px;
+    padding-top: 5px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    color: black;
+    background-color: #fff;
+}
+
+.social-list a:hover {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.main-wrapper {
+    margin-left: var(--sidebar-width);
+    background: #fff;
+}
+
+
+.page-title {
+    height: 40px;
+    top:0;
+    z-index:9999;
+}
+.page-title .heading {
+    margin-top: -20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+}
+.footer a {
+    color: #fff
+}
+.gradient{
+    background: black;
+}
+
+footer{
+    background: black;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    margin-top:50px;
+}
+.gallery {
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+    width: 300px;
+    position: relative;
+    float: left;
+    padding: 5px;
+}
+
+.gallery > div > img {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    transition: .1s transform;
+    transform: translateZ(0);
+}
+
+.gallery > div:hover {
+    z-index: 1;
+}
+
+.gallery > div:hover > img {
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+}
+.falcon{
+    padding-left: 10px;
+}
+.falcon9{
+    float:right;
+    height: 900px;
+}
+.falcon1>img{
+    width: 300px;
+}
+.falcon1{
+    float: left;
+    font-size: 10px;
+    width: 300px;
+}
+.elon1{
+    margin-top: 50px;
+    float: right;
+    height: 450px;
+}
+.crs{
+    width: 100%;
+    height: 500px;
+}
+.ana>p, h1{
+    margin: 40px 40px 50px 40px;
+}
